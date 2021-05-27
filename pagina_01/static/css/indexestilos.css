@@ -1,0 +1,70 @@
+img{
+    
+    margin-top: 10px; /*margen de arriba*/
+    margin-left: 10px;
+    width: 120px; /*tamaño de la imagen*/
+}
+li{
+    /*float: left;  si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/
+    list-style: none;
+    padding: 10px;
+
+}
+nav{
+    margin-right: 20px;
+    margin-top: 80px;
+    float: right;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+}
+li:hover a{
+    color:aqua;
+}
+
+body{
+    background-image: url(../img/fondo2.png);
+    background-position: 0% 150px; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+    background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
+    background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
+    background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
+}
+
+*{  /*controles generales*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.click{
+    min-width: 400px;
+    margin: auto;
+    border: 4px solid #07f161;
+    margin-left: 800px;
+    margin-top: 150px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px;
+    
+}
+
+.convocatorias{
+    color: aliceblue;
+    font-size: 40px;
+    font-style: oblique;
+    margin-left: 830px;
+    margin-top: -100px;
+}
+
+.click2{
+    min-width: 300px;
+    margin: auto;
+    border: 4px solid #05ec66;
+    margin-left: 250px;
+    margin-top: -280px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px;
+}

@@ -1,0 +1,70 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Colunga</title>
+    <link href="{% static 'css/indexestilos.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/logo1.png'%}" alt="my image">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../planificador/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="far fa-calendar"></i></i> Planificador
+                        </button>
+                    </a>
+                    <a href="../videoconferencias/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="fas fa-video"></i></i> Videoconferencias
+                        </button>
+                    </a>
+                    <a href="../saladechat/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="fas fa-comments"></i></i> Sala de chat
+                        </button>
+                    </a>
+                    <a href="../organizaciones/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="fas fa-users"></i></i> Organizaciones
+                        </button>
+                    </a>
+                    <a href="../comunicados/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="far fa-calendar-check"></i> Comunicados
+                        </button>
+                    </a>
+                    <a href="../Inicio/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <center><p style="border: 3px solid #ffffff; padding: 20px;  background:#ffffff;"></p></center>
+    </header>
+    <script src="/static/js/bootstrap.js"></script>
+
+    <a href='../perfil/'>
+        <p style="'color:black'; text-align: right; position: relative; right: 90px; bottom: 55px; font-family: arial,helvetica; font-size: 18px; font-weight: bold;"><i class="far fa-user";"> &nbsp;</i>Bienvenido {{user.username | upper}}</p></center>
+    </a>
+
+    <a class='visitanos' href='https://www.fundacioncolunga.org/convocatorias/'>
+        <img class='click' src="{% static 'img/convocatorias.jpg'%}" alt="my image">
+        <p class='convocatorias'>Convocatorias</p>
+    </a>
+
+    <a class='visitanos2' href='https://www.fundacioncolunga.org/'>
+        <img class='click2' src="{% static 'img/cap6.png'%}" alt="my image">
+    </a>
+</body>
+</html>
