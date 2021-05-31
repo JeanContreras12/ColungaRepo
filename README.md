@@ -16,7 +16,23 @@ Colunga ofrece a sus miembros.
 * [FontAwesome](https://fontawesome.com/)
 
 
-### Instalacion por consola de django
-  ```sh
-  pip3 install django
-  ```
+<!-- CONTACT -->
+## Equipo Scrum
+
+Product Owner
+<ul>
+  <li type="disc">Diego Alegría</li>
+</ul>
+Scrum Master
+<ul>
+  <li type="disc">Matías Aravena</li>
+</ul>
+Scrum team
+<ul>
+  <li type="disc">Gino Salazar</li>
+  <li type="disc">Nicolás Salinas</li>
+  <li type="disc">Jean Paul Moussiaux</li>
+  <li type="disc">Jean Contreras</li>
+  <li type="disc">Cristian Millán</li>
+  <li type="disc">Alejandro Bórquez</li>
+</ul>
