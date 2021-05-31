@@ -36,6 +36,8 @@ Scrum team
   <li type="disc">Cristian Millán</li>
   <li type="disc">Alejandro Bórquez</li>
 </ul>
+
+
 <!-- LICENSE -->
 ## Licencia
 
