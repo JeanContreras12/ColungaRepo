@@ -1,4 +1,4 @@
-# PlataformaColunga
+# Plataforma Colunga
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
 Este proyecto está orientado a centralizar la
