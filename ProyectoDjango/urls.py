@@ -21,7 +21,6 @@ from ColungaApp import views
 from pagina_01 import views as viewsindex
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', viewsindex.login, name='index'),
     path('logeado/', login_required(viewsindex.login), name='logeado'),
     path('accounts/login/',LoginView.as_view(template_name='ColungaApp/login.html'), name='login'),
     path('Inicio/',LogoutView.as_view(template_name='pagina_01/index.html'), name='Inicio'),

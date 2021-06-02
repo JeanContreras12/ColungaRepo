@@ -29,7 +29,11 @@
         </nav>
     </header>
     <script src="/static/js/bootstrap.js"></script>
+    <div class="contenedor">
+        <img class="logo-log" src="{% static 'img/avatar-colunga.png'%}" alt="my image" width="200" height="120">
+    </div>
     <section class="form-login">
+
         <form method="POST">
             {% csrf_token%}
             {% if request.method == 'POST' %} 
@@ -38,15 +42,18 @@
                     <div class="alert alert-danger alert-dismissible" role="alert" >
                         <button type="button" class="close" data-dismiss = "alert" aria-hidden="true">&times;
                         </button>
-                        <strong>Advertencia:</strong>{{ form.get_invalid_login_error}}
+                        <strong>Error:</strong> Porfavor introduzca un nombre de usuario y/o contraseña correctos. 
                     </div>  
             {% endif %}
             {% endif %}
             <h5>Formulario Login</h5>
-                <div class="username">
+  
+                <div class="username" >
+                    <img class="col-per" src="{% static 'img/Icono-persona.png'%}" alt="my image">
                     <input class="controls" type="text" name="username" value="" placeholder="Usuario">
                 </div>
                 <div>
+                    <img class="col-per" src="{% static 'img/candado.png'%}" alt="my image">
                     <input class="controls" type="password" name="password" value="" placeholder="Contraseña">
                 </div>
                 <input class="buttons" type="submit" name="" value="Login"> 
