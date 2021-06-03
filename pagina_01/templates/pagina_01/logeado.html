@@ -4,20 +4,21 @@
 <head>
     <link href="/static/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Colunga</title>
-    <link href="{% static 'css/indexestilos.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/estiloslogeado.css'%}" rel="stylesheet" />
 </head>
 <body>
     <header>
         <a href="https://www.fundacioncolunga.org/">
-            <img src="{% static 'img/logo1.png'%}" alt="my image">
+            <img src="{% static 'img/logo1.png'%}" width="120" alt="my image">
         </a>
         <nav>
             <ul>
+                
                 <li>
                     <a href="../planificador/">
                         <button type="button" class="btn btn-success btn-lg">
@@ -52,21 +53,48 @@
                 </li>
             </ul>
         </nav>
-        <center><p style="border: 3px solid #ffffff; padding: 20px;  background:#ffffff;"></p></center>
+        <center><p style="position: relative; border-radius: 15px;  border: 3px solid #ffffff; padding: 20px; width: 20%; right: -750px; text-align: right; background:#ffffff;"></p></center>
+    
     </header>
     <script src="/static/js/bootstrap.js"></script>
 
     <a href='../perfil/'>
-        <p style="'color:black'; text-align: right; position: relative; right: 90px; bottom: 55px; font-family: arial,helvetica; font-size: 18px; font-weight: bold;"><i class="far fa-user";"> &nbsp;</i>Bienvenido {{user.username | upper}}</p></center>
+        <p style="'color:black'; text-align: right; position: relative; right: 90px; bottom: 50px; font-family: arial,helvetica; font-size: 18px; font-weight: bold;"><i class="far fa-user";> &nbsp;</i>Bienvenido {{user.username | upper}}</p></center>
     </a>
 
-    <a class='visitanos' href='https://www.fundacioncolunga.org/convocatorias/'>
-        <img class='click' src="{% static 'img/convocatorias.jpg'%}" alt="my image">
-        <p class='convocatorias'>Convocatorias</p>
-    </a>
+    <div id="tabla">
+        <table class="resp">
+            <thead>
+                <tr>
+                    <th>&nbsp;Próximas reuniones</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><strong>Lunes 03/05</strong><br>“Escuchar hasta comprender”: Una charla introductoria para la resolución de conflictos</td>
+            </tr>
+            <tr>
+                <td><strong>Miércoles 05/05</strong><br>“Pandemia y sociedad civil: desafíos comunicacionales”</td>
+            </tr>
+            <tr>
+                <td><strong>Viernes 14/05</strong><br>“¿Cómo mantener vínculos significativos en tiempos de crisis?”</td>
+            </tr>
+            
+        </table>
 
-    <a class='visitanos2' href='https://www.fundacioncolunga.org/'>
-        <img class='click2' src="{% static 'img/cap6.png'%}" alt="my image">
-    </a>
+    </div>
+    <div id="tabla2">
+        <table class="resp">
+            <thead>
+                <tr>
+                    <th>&nbsp;Últimas noticias</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><img src="{% static 'img/noticia1.png'%}" height="250" width="250"; alt="noticia1"><img src="{% static 'img/noticia2.png'%}"height="250" width="250"; alt="noticia2" ></td>
+            </tr>
+            
+        </table>
+
+    </div>
 </body>
 </html>

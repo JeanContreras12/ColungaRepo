@@ -44,7 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ColungaApp',
     'pagina_01',
+    'colorfield',
+    'crispy_forms',
 ]
+CRISPY_TEMPLATE_PACK = 'uni_form'
+CRISPY_TEMPLATE_PACK ='bootstrap4'
+
+X_FRAME_OPTIONS='SAMEORIGIN'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
