@@ -21,11 +21,10 @@ from ColungaApp import views
 from pagina_01 import views as viewsindex
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', viewsindex.login, name='index'),
     path('logeado/', login_required(viewsindex.login), name='logeado'),
-    path('registro/',login_required(LoginView.as_view(template_name='pagina_01/registro.html')), name='registro'),
+    path('registro/',login_required(viewsindex.registro), name='registro'),
     path('accounts/login/',LoginView.as_view(template_name='ColungaApp/login.html'), name='login'),
-    path('Inicio/',LogoutView.as_view(template_name='pagina_01/index.html'), name='Inicio'),
+    path('Inicio/',LogoutView.as_view(template_name='pagina_01/index.html'), name='inicio'),
     path('planificador/',login_required(LoginView.as_view(template_name='pagina_01/planificador.html')), name='planificador'),
     path('saladechat/',login_required(LoginView.as_view(template_name='pagina_01/saladechat.html')), name='saladechat'),
     path('videoconferencias/',login_required(LoginView.as_view(template_name='pagina_01/videoconferencias.html')), name='videoconferencias'),

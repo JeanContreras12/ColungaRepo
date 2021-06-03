@@ -1,5 +1,5 @@
 img{
-    margin-top: 1%; /*margen de arriba*/
+    margin-top: 10px; /*margen de arriba*/
     margin-left: 10px;
     width: 120px; /*tamaño de la imagen*/
 }
@@ -9,8 +9,8 @@ li{/*botones*/
 
 }
 nav{
-    margin-right: 1%;
-    margin-top: 6%;
+    margin-right: 70px;
+    margin-top: 100px;
     float: right;
 }
 a{
@@ -35,8 +35,8 @@ body{
     box-sizing: border-box;
 }
 .form-login{ /*para la ventana login*/
-    width: 450px;
-    height: 350px;
+    width: 660px;
+    height: 70%;
     background: rgb(23, 160, 41);
     margin: auto;
     margin-top: 10px;
@@ -64,18 +64,20 @@ body{
 .buttons{
     width: 50%;
     height: 40px;
-    margin-left: 90px;
+    margin-left: 22%;
     background: rgb(177, 170, 170);
+    margin-top: 10%;
     box-shadow: 0px 2px 20px #000;
 
 }
 .contenedor{
     width: 100%;
     text-align: center;
+    margin-top: -8%;
 }
 .logo-log{
-    max-width: 20%;
-    margin-left: 10%;
+    max-width: 100%;
+    margin-left: 180px;
     
 }
 
@@ -83,6 +85,6 @@ body{
     width: 1%;
     text-align:left;
 }
-.col-per{
-    max-width: 10%;
+.tabla{
+    width: auto;
 }
