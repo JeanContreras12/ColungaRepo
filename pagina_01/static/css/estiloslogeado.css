@@ -5,14 +5,20 @@ img{
      /*tamaño de la imagen*/
 }
 li{
-    /*float: left;  si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/
+    float: left;  /*si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/
     list-style: none;
     padding: 10px;
+    width: 1200px;
+    position:initial;
 
 }
+
+
 nav{
-    margin-right: 20px;
-    margin-top: 80px;
+    position: fixed;
+  
+    margin-top: -70px;
+    margin-left: 680px;
     float: right;
     font-size: 10px;
 }
@@ -50,6 +56,7 @@ body{
     width: 600px;
     margin: -570px auto;
     margin-right: 200px;
+    margin-left: 1000px;
     
 }
 
@@ -61,6 +68,9 @@ table{
     width: 100%;
     
 }
+#hscroll {
+    overflow-x: auto; /* Horizontal */
+  }
 th, td{
     padding:10px;
 }
