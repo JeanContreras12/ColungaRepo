@@ -18,13 +18,13 @@
             <ul>
                 <li>
                     <a href="../login/">
-                        <button type="button" class="btn btn-success btn-lg">
+                        <button type="button" class="btn btn-success">
                             <i class="far fa-calendar-check"></i> Novedades
                         </button>
                     </a>
 
                     <a href="../accounts/login/">
-                        <button type="button" class="btn btn-success btn-lg">
+                        <button type="button" class="btn btn-success">
                             <i class="fas fa-angle-right"></i> Iniciar Sesión
                         </button>
                     </a>
@@ -35,13 +35,18 @@
     </header>
     <script src="/static/js/bootstrap.js"></script>
 
-    <a class='visitanos' href= 'https://www.fundacioncolunga.org/convocatorias/'>
-        <img class='click' src="{% static 'img/convocatorias.jpg'%}" alt="my image">
-        <p class='convocatorias'>Convocatorias</p>
-    </a>
-
-    <a class='visitanos2' href= 'https://www.fundacioncolunga.org/'>
-        <img class='click2' src="{% static 'img/cap6.png'%}" alt="my image">
-    </a>
+    <div class="container">
+        <div class="row">
+          <div class="col" style='margin-top: 100px; margin-left: 50px; '>
+            <a class='visitanos2' href= 'https://www.fundacioncolunga.org/'>
+                <img class='click2' src="{% static 'img/cap6.png'%}" alt="my image">
+          </div>
+          <div class="col order-12" style='margin-top: 100px; margin-bottom: 50px; margin-left: auto;'>
+            <a class='visitanos' href= 'https://www.fundacioncolunga.org/convocatorias/'>
+                <img class='click' src="{% static 'img/convocatorias.jpg'%}" alt="my image">
+            </a>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
