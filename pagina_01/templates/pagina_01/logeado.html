@@ -20,14 +20,9 @@
             <ul>
                 
                 <li>
-                    <a href="../registro/">
-                        <button type="button" class="btn btn-success btn-lg">
-                            <i class="fas fa-registered"></i></i></i> Registrar Usuarios
-                        </button>
-                    </a>
                     <a href="../planificador/">
                         <button type="button" class="btn btn-success btn-lg">
-                            <i class="far fa-calendar"></i></i> Planificador
+                            <i class="far fa-calendar" ></i></i> Planificador
                         </button>
                     </a>
                     <a href="../videoconferencias/">
@@ -64,11 +59,11 @@
     <script src="/static/js/bootstrap.js"></script>
 
     <a href='../perfil/'>
-        <p style="'color:black'; text-align: right; position: relative; right: 90px; bottom: 50px; font-family: arial,helvetica; font-size: 18px; font-weight: bold;"><i class="far fa-user";> &nbsp;</i>Bienvenido {{user.username | upper}}</p></center>
+        <p style=" color:black; text-align: right; position:fixed; left: 1580px; bottom: 775px; font-family: arial,helvetica; font-size: 18px; font-weight: bold;"><i class="far fa-user";> &nbsp;</i>Bienvenido {{user.username | upper}}</p>
     </a>
 
     <div id="tabla">
-        <table class="resp">
+        <table >
             <thead>
                 <tr>
                     <th>&nbsp;Próximas reuniones</th>
@@ -88,7 +83,7 @@
 
     </div>
     <div id="tabla2">
-        <table class="resp">
+        <table>
             <thead>
                 <tr>
                     <th>&nbsp;Últimas noticias</th>
