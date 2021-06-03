@@ -1,0 +1,88 @@
+img{
+    
+    margin-top: 10px; /*margen de arriba*/
+    margin-left: 10px;
+    width: 120px; /*tamaño de la imagen*/
+}
+li{
+    /*float: left;  si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/
+    list-style: none;
+    padding: 10px;
+
+}
+nav{
+    margin-right: 20px;
+    margin-top: 80px;
+    float: right;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+}
+li:hover a{
+    color:aqua;
+}
+
+body{
+    background-image: url(../img/img6.jpg);
+    background-position: 0% 150px; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+    background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
+    background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
+    background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
+}
+
+*{  /*controles generales*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    font-family:Georgia,serif,Times;
+    background-color: #44b602;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    font-size:50px;
+    font-weight:900;
+    /* IMPORTANTE */
+    text-align: left;
+    border-radius: 20px;
+}
+
+.lista1{        
+    border-collapse: separate;
+    border-spacing: 10;
+    border: 1px solid black;
+    border-radius: 15px;
+    -moz-border-radius: 20px;
+    padding: 2px;
+    -webkit-border-radius: 5px
+}
+#lista1 ul { 
+    list-style:none;
+}
+
+#lista1 ul li { 
+    font-family:Georgia,serif,Times; 
+}
+
+#lista1 ul li a { 
+    display:block; 
+    width:auto;
+    height:auto; /*Medida del recuadro del texto */
+    background-color:gray; 
+    padding-left:100px;
+    text-align:center; 
+    color:black;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+}
+
+#lista1 ul li a:hover { 
+    box-shadow:10px 10px 20px rgba(31, 31, 255, 0.651);
+    margin-left: 10px;
+}
