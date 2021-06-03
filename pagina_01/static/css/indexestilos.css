@@ -1,8 +1,8 @@
 img{
     
-    margin-top: 10px; /*margen de arriba*/
-    margin-left: 10px;
-    width: 120px; /*tamaño de la imagen*/
+    margin-top: 1%; /*margen de arriba*/
+    margin-left: 1%;
+    width: 8.3%; /*tamaño de la imagen*/
 }
 li{
     /*float: left;  si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/

@@ -13,10 +13,15 @@
 </head>
 <body>
     <header>
-        <img src="{% static 'img/logo1.png'%}" alt="my image">
+        <img  class="col-img" src="{% static 'img/logo1.png'%}" alt="my image">
         <nav>
             <ul>
                 <li>
+                    <a href="../registro/">
+                    <button type="button" class="btn btn-success">
+                        <i class="far fa-calendar-check"></i> Admin
+                    </button>
+                    </a>
                     <a href="../login/">
                         <button type="button" class="btn btn-success">
                             <i class="far fa-calendar-check"></i> Novedades
