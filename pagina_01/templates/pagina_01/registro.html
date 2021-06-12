@@ -35,13 +35,20 @@
     <section class="form-login">
 
         <h2 class="titulo">Registro de usuario</h2>
+        {% for message in messages %}
+            <strong><h3 class="messages">{{ message }}</h3></strong>
+        {% endfor %}
         <form action="" method="POST" class="formulario">
             {% csrf_token%}
             <table class="tabla">
                 {{ form.as_table }}
 
             </table>
+        
         <input class="buttons" input type="submit" value="Registrar" > 
+        {{formulario.errors}}
+        </form>
+
     </section>
 </body>
 </html>

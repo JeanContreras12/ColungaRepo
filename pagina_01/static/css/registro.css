@@ -88,3 +88,8 @@ body{
 .tabla{
     width: auto;
 }
+.messages{
+    background: rgb(255, 253, 253);
+    text-align: center;
+    width: 70%;
+}
