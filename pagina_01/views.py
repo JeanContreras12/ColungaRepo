@@ -3,11 +3,32 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from .forms import CustomUserForm
 from django.contrib.auth import login, authenticate
+from django.contrib.auth.models import Group
+from django.contrib import messages
+from .decorators import solo_admin
 # Create your views here.
 
 def login(request):
     return render(request, 'pagina_01/logeado.html')
 
+def planificador(request):
+    return render(request,'pagina_01/planificador.html')
+
+def saladechat(request):
+    return render(request,'pagina_01/saladechat.html')
+
+def videoconferencia(request):
+    return render(request,'pagina_01/videoconferencias.html')
+
+def comunicados(request):
+    return render(request, 'pagina_01/comunicados.html')
+
+def organizaciones(request):
+    return render(request,'pagina_01/organizaciones.html')
+
+def perfil(request):
+    return render(request, 'pagina_01/perfil.html')
+@solo_admin
 def registro(request):
     data={
         'form':CustomUserForm()
@@ -15,12 +36,14 @@ def registro(request):
     if request.method == 'POST':
         formulario = CustomUserForm(request.POST)
         if formulario.is_valid():
-            formulario.save()
+            user=formulario.save()
             #autenticar al usuario y redirigir al inicio
             username=formulario.cleaned_data['username']
             password=formulario.cleaned_data['password1']
             user=authenticate(username=username,password=password)
+            group=Group.objects.get(name='customer')
+            user.groups.add(group)
             login(request)
-            return redirect(to='inicio')
+            messages.success(request,'cuenta creada con exito')
 
     return render(request, 'pagina_01/registro.html',data)

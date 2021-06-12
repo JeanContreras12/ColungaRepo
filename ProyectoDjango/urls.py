@@ -25,12 +25,11 @@ urlpatterns = [
     path('registro/',login_required(viewsindex.registro), name='registro'),
     path('accounts/login/',LoginView.as_view(template_name='ColungaApp/login.html'), name='login'),
     path('Inicio/',LogoutView.as_view(template_name='pagina_01/index.html'), name='inicio'),
-    path('planificador/',login_required(LoginView.as_view(template_name='pagina_01/planificador.html')), name='planificador'),
-    path('saladechat/',login_required(LoginView.as_view(template_name='pagina_01/saladechat.html')), name='saladechat'),
-    path('videoconferencias/',login_required(LoginView.as_view(template_name='pagina_01/videoconferencias.html')), name='videoconferencias'),
-    path('comunicados/',login_required(LoginView.as_view(template_name='pagina_01/comunicados.html')), name='comunicados'),
-    path('organizaciones/',login_required(LoginView.as_view(template_name='pagina_01/organizaciones.html')), name='organizaciones'),
-    path('perfil/',login_required(LoginView.as_view(template_name='pagina_01/perfil.html')), name='perfil'),
-
+    path('planificador/',login_required(viewsindex.planificador), name='planificador'),
+    path('saladechat/',login_required(viewsindex.saladechat), name='saladechat'),
+    path('videoconferencias/',login_required(viewsindex.videoconferencia), name='videoconferencias'),
+    path('comunicados/',login_required(viewsindex.comunicados), name='comunicados'),
+    path('organizaciones/',login_required(viewsindex.comunicados), name='organizaciones'),
+    path('perfil/',login_required(viewsindex.perfil), name='perfil'),
 
 ]
