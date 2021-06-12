@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Ingresar | COLUNGA</title>
+    
+        <!--JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <!-- Los iconos tipo Solid de Fontawesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Nuestro css-->
+        <link rel="stylesheet" type="text/css" href="{% static 'css-login/index.css' %}" th:href="@{/css/index.css}">
+        
+    </head>
+    <body background="{% static 'img/login.png' %}">
+        <!--logo-->
+        <a href="main.html"><img id="logo" src="{% static 'img/logo.png' %}" alt="logo"></a>
+        
+        <div class="modal-dialog text-center">
+            <div class="col-sm-8 main-section">
+                <div class="modal-content">
+                    <div class="col-12 user-img">
+                        <img src="{% static 'img/user.png' %}"/>
+                    </div>
+                    <!--formulario login-->
+                    <form name="boxlogin" class="col-12" method="post">
+                        {% csrf_token %}
+                        <div class="form-group" id="user-group">
+                            <input class='form-control' name='txt_mail' type='email' placeholder='Ingresa tu correo'>
+                        </div>
+                        <div class="form-group" id="contrasena-group">
+                            <input class='form-control' name='txt_password' type='password'  placeholder='Ingresa tu contraseña'>
+                        </div>
+                        <button class="btn btn-primary" name="btn_submit" type='submit' value='Ingresar'><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+                    </form>
+                    <!--
+                    <div class="col-12 forgot">
+                        <a href="#">Recordar contrasena?</a>
+                    </div>
+                -->
+                    
+                </div>
+            </div>
+        </div>
+
+                    <!--pie de pagina-->
+        <footer>
+            <div id="pagnav">
+                <a href="main.html"> go to main</a>
+                <a href="ingreso.html"> go to login</a>
+                <a href="inicio.html"> go to Inicio</a>
+                <a href="addUser.html"> go to EditAdmin</a>
+            </id>
+        </footer>
+    </body>
+</html>
