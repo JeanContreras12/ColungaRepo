@@ -7,7 +7,9 @@ from django.contrib.auth.models import Group
 from django.contrib import messages
 from .decorators import solo_admin
 # Create your views here.
-
+@solo_admin
+def loginADMIN(request):
+    return render(request, 'pagina_01/logeadoADMIN.html')
 def login(request):
     return render(request, 'pagina_01/logeado.html')
 

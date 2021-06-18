@@ -32,4 +32,6 @@ urlpatterns = [
     path('organizaciones/',login_required(viewsindex.comunicados), name='organizaciones'),
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
 
+    path('login-admin/',login_required(viewsindex.loginADMIN), name='login-admin'),
+    
 ]
