@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="{% static 'css/icomoon/style.css'%}" rel="stylesheet" />
     <link href="/static/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/bootstrap.css">
 
@@ -9,9 +10,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>logeado</title>
-    <link href="{% static 'css/logeado2.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/logeado.css'%}" rel="stylesheet" />
 </head>
 <body>
+    <div class= "social-bar">
+        <a href="https://www.facebook.com/fundacioncolunga/" class="icon icon-facebook2" target="_blank"></a>
+        <a href="https://www.instagram.com/fundacioncolunga/?hl=es" class="icon icon-instagram" target="_blank"></a>
+        <a href="https://twitter.com/fundcolunga?s=20" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://cl.linkedin.com/company/fundaci%C3%B3n-colunga" class="icon icon-linkedin" target="_blank"></a>
+    </div>
     <header class="header">
         <div class="container logo-nav-container">
             <div class="logo-col">
@@ -19,7 +26,6 @@
                     <img src="{% static 'img/logo1.png'%}" alt="my-img" class="imagen-col">
                 </a>
             </div>
-            <span class="menu-icon">Ver menu</span>
             <nav class="navegacion">
                 <ul class="show">
                             
@@ -29,14 +35,6 @@
                                 </button>
                             </a>
                     </li>
-
-                    <li>
-                        <a href="../videoconferencias/">
-                            <button type="button" class="btn btn-success btn-sm">
-                                <i class="fas fa-video"></i></i> Videoconferencias
-                            </button>
-                        </a>   
-                    </li>    
                     
                     <li>
                         <a href="../saladechat/">
@@ -50,14 +48,6 @@
                         <a href="../organizaciones/">
                             <button type="button" class="btn btn-success btn-sm">
                                 <i class="fas fa-users"></i></i> Organizaciones
-                            </button>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../comunicados/">
-                            <button type="button" class="btn btn-success btn-sm">
-                                <i class="far fa-calendar-check"></i> Comunicados
                             </button>
                         </a>
                     </li>

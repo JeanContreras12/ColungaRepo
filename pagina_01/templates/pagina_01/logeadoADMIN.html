@@ -2,16 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="{% static 'css/icomoon/style.css'%}" rel="stylesheet" />
     <link href="/static/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/bootstrap.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logeado</title>
-    <link href="{% static 'css/logeado2.css'%}" rel="stylesheet" />
+    <title>Administrador</title>
+    <link href="{% static 'css/logeadoADMIN.css'%}" rel="stylesheet" />
 </head>
 <body>
+    <div class= "social-bar">
+        <a href="https://www.facebook.com/fundacioncolunga/" class="icon icon-facebook2" target="_blank"></a>
+        <a href="https://www.instagram.com/fundacioncolunga/?hl=es" class="icon icon-instagram" target="_blank"></a>
+        <a href="https://twitter.com/fundcolunga?s=20" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://cl.linkedin.com/company/fundaci%C3%B3n-colunga" class="icon icon-linkedin" target="_blank"></a>
+    </div>
     <header class="header">
         <div class="container logo-nav-container">
             <div class="logo-col">
@@ -19,37 +26,14 @@
                     <img src="{% static 'img/logo1.png'%}" alt="my-img" class="imagen-col">
                 </a>
             </div>
-            <span class="menu-icon">Ver menu</span>
             <nav class="navegacion">
                 <ul class="show">
                     <li ><a href="../registro/">
                             <button type="button" class="btn btn-success btn-sm">
-                                <i class="far fa-calendar" ></i></i> Registro
+                                <i class="fas fa-user-plus" ></i></i> Registro
                             </button>
                         </a>
                      </li>        
-                    <li ><a href="../planificador/">
-                                <button type="button" class="btn btn-success btn-sm">
-                                    <i class="far fa-calendar" ></i></i> Planificador
-                                </button>
-                            </a>
-                    </li>
-
-                    <li>
-                        <a href="../videoconferencias/">
-                            <button type="button" class="btn btn-success btn-sm">
-                                <i class="fas fa-video"></i></i> Videoconferencias
-                            </button>
-                        </a>   
-                    </li>    
-                    
-                    <li>
-                        <a href="../saladechat/">
-                            <button type="button" class="btn btn-success btn-sm">
-                                 <i class="fas fa-comments"></i></i> Sala de chat
-                             </button>
-                        </a>
-                    </li>
 
                     <li>
                         <a href="../organizaciones/">
@@ -59,21 +43,12 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a href="../comunicados/">
+                    <li ><a href="../planificador/">
                             <button type="button" class="btn btn-success btn-sm">
-                                <i class="far fa-calendar-check"></i> Comunicados
+                                <i class="far fa-calendar" ></i></i> Planificador
                             </button>
                         </a>
-                    </li>
-
-                    <li>
-                        <a href="../comunicados/">
-                            <button type="button" class="btn btn-success btn-sm">
-                                <i class="far fa-calendar-check"></i> Comunicados
-                            </button>
-                        </a>
-                    </li>
+                    </li>   
 
                     <li>
                         <a href="../Inicio/">
@@ -84,7 +59,7 @@
                     </li>
                     <div class="perfil">
                         <a href='../perfil/'>
-                            <strong><span class="perfil-user">Bienvenido {{request.user | upper}}</span></strong>
+                            <strong><span class="perfil-user">Bienvenido Administrador {{request.user | upper}}</span></strong>
                         </a>
                     </div>
                 </ul>
@@ -94,26 +69,7 @@
     </header>
     <main class="main">
         <div class="container">
-            <!--<div id="tabla">
-                <table >
-                    <thead>
-                        <tr>
-                            <th>&nbsp;Próximas reuniones</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td><strong>Lunes 03/05</strong><br>“Escuchar hasta comprender”: Una charla introductoria para la resolución de conflictos</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Miércoles 05/05</strong><br>“Pandemia y sociedad civil: desafíos comunicacionales”</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Viernes 14/05</strong><br>“¿Cómo mantener vínculos significativos en tiempos de crisis?”</td>
-                    </tr>
-                    
-                </table>
-        
-            </div>-->
+           
         </div>
     </main>
     
