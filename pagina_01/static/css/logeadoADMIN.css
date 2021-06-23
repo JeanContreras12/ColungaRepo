@@ -125,6 +125,22 @@ tr:hover td{
 .noticia1{
     height: 200px;
 }
+.logo-mail{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+.titulo-mail{
+    padding: 0;
+    margin-left: 32%;
+    width: 40%;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    background-color: green;
+}
+
+
 
 @media only screen and (max-width: 1400px){ /* Cuando la pantalla tenga un maximo de ancho de 767 hacer:*/
     body{
@@ -137,6 +153,22 @@ tr:hover td{
 
     }
 
+    .titulo-mail{
+        padding: 0;
+        margin-left: 32%;
+
+        color:rgb(255, 255, 255);
+        background-color: green;
+    }
+    
+    .logo-mail{
+        text-align: center;
+        margin-top: 50%;
+        width: 50%;
+    }
+    .imagen-mail{
+        width: 200%;
+    }
     .navegacion{
         width: 100%;
         margin-top: 1rem;
