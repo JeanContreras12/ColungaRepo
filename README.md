@@ -14,6 +14,7 @@ Colunga ofrece a sus miembros.
 * [Django](https://www.djangoproject.com)
 * [Boostrap](https://getbootstrap.com/)
 * [FontAwesome](https://fontawesome.com/)
+* [Icomoon](https://icomoon.io/)
 
 
 <!-- CONTACT -->
