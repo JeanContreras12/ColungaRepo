@@ -24,11 +24,12 @@ urlpatterns = [
     path('logeado/', login_required(viewsindex.login), name='logeado'),
     path('registro/',login_required(viewsindex.registro), name='registro'),
     path('accounts/login/',LoginView.as_view(template_name='ColungaApp/login.html'), name='login'),
-    path('Inicio/',LogoutView.as_view(template_name='pagina_01/index.html'), name='inicio'),
+    path('',LogoutView.as_view(template_name='pagina_01/index.html'), name='inicio'),
     path('planificador/',login_required(viewsindex.planificador), name='planificador'),
     path('saladechat/',login_required(viewsindex.saladechat), name='saladechat'),
     path('videoconferencias/',login_required(viewsindex.videoconferencia), name='videoconferencias'),
     path('comunicados/',login_required(viewsindex.comunicados), name='comunicados'),
+    path('comunicado/',viewsindex.comunicadosINDEX, name='comunicados'),
     path('organizaciones/',login_required(viewsindex.comunicados), name='organizaciones'),
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
 

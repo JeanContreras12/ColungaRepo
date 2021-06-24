@@ -24,6 +24,8 @@ def saladechat(request):
 
 def videoconferencia(request):
     return render(request,'pagina_01/videoconferencias.html')
+def comunicadosINDEX(request):
+    return render(request, 'pagina_01/comunicadosINDEX.html')
 
 def comunicados(request):
     return render(request, 'pagina_01/comunicados.html')
