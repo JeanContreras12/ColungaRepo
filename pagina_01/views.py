@@ -10,6 +10,9 @@ from .decorators import solo_admin
 @solo_admin
 def loginADMIN(request):
     return render(request, 'pagina_01/logeadoADMIN.html')
+@solo_admin
+def planificadorAdmin(request):
+    return render(request,'pagina_01/planificadorADMIN.html')
 def login(request):
     return render(request, 'pagina_01/logeado.html')
 

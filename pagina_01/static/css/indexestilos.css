@@ -4,6 +4,9 @@ img{
     margin-left: 1%;
     width: 8.3%; /*tamaño de la imagen*/
 }
+.col-img{
+    width: 110px;
+}
 li{
     /*float: left;  si tuviera mas botones que volver los pondria a todos en fila hacia la izquierda*/
     list-style: none;

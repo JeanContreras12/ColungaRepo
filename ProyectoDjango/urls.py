@@ -33,5 +33,5 @@ urlpatterns = [
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
 
     path('login-admin/',login_required(viewsindex.loginADMIN), name='login-admin'),
-    
+    path('planificadorADMIN/',login_required(viewsindex.planificadorAdmin), name='planificador'),
 ]
