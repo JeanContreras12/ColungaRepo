@@ -31,6 +31,7 @@ urlpatterns = [
     path('comunicados/',login_required(viewsindex.comunicados), name='comunicados'),
     path('organizaciones/',login_required(viewsindex.comunicados), name='organizaciones'),
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
+    path('contacto/',login_required(viewsindex.contacto), name='contacto'),
 
     path('login-admin/',login_required(viewsindex.loginADMIN), name='login-admin'),
     

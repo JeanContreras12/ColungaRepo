@@ -30,6 +30,8 @@ def organizaciones(request):
 
 def perfil(request):
     return render(request, 'pagina_01/perfil.html')
+def contacto(request):
+    return render(request, 'pagina_01/contacto.html')
 @solo_admin
 def registro(request):
     data={
