@@ -16,6 +16,15 @@ nav{
     float: right;
     font-size: 10px;
 }
+agendar{
+    
+    background-color:#28a745;
+    margin-right: 40px;
+    padding: 25px;
+    border-radius: 15px;
+    
+    
+}
 a{
     text-decoration: none;
     font-size: 29px;
