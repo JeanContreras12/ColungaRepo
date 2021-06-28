@@ -10,6 +10,9 @@ from .decorators import solo_admin
 @solo_admin
 def loginADMIN(request):
     return render(request, 'pagina_01/logeadoADMIN.html')
+@solo_admin
+def planificadorAdmin(request):
+    return render(request,'pagina_01/planificadorADMIN.html')
 def login(request):
     return render(request, 'pagina_01/logeado.html')
 
@@ -21,6 +24,8 @@ def saladechat(request):
 
 def videoconferencia(request):
     return render(request,'pagina_01/videoconferencias.html')
+def comunicadosINDEX(request):
+    return render(request, 'pagina_01/comunicadosINDEX.html')
 
 def comunicados(request):
     return render(request, 'pagina_01/comunicados.html')
