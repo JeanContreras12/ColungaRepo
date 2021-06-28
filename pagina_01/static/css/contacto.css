@@ -16,15 +16,6 @@ nav{
     float: right;
     font-size: 10px;
 }
-agendar{
-    
-    background-color:#28a745;
-    margin-right: 40px;
-    padding: 25px;
-    border-radius: 15px;
-    
-    
-}
 a{
     text-decoration: none;
     font-size: 29px;
@@ -36,7 +27,7 @@ li:hover a{
 }
 
 body{
-    background-image: url(../img/img8.jpg);
+    background-image: url(../img/img9.jpg);
     background-position: 0% 150px; /*posicion de la imagen en x (0 si no la quieres mover) y*/
     background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
     background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
@@ -49,7 +40,7 @@ body{
     box-sizing: border-box;
 }
 
-span.calendario{
+span.contacto{
     font-size: 50px;
     margin-left: 650px;
 }
