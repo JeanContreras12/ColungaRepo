@@ -1,0 +1,24 @@
+img{
+    margin-top: 10px; /*margen de arriba*/
+    margin-left: 10px;
+    width: 120px; /*tamaño de la imagen*/
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+nav{
+    margin-right: 20px;
+    margin-top: 40px;
+    float: right;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+}
+li:hover a{
+    color:aqua;
+}
