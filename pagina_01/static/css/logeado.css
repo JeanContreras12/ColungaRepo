@@ -129,7 +129,7 @@ tr:hover td{
 @media only screen and (max-width: 1400px){ /* Cuando la pantalla tenga un maximo de ancho de 767 hacer:*/
     body{
         background-image: url(../img/Fondo.jpg);
-        background-position: 0% 300px; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+        background-position: 0% 0%; /*posicion de la imagen en x (0 si no la quieres mover) y*/
         background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
         background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
         background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
@@ -155,7 +155,14 @@ tr:hover td{
             .navegacion ul li a{
                 display: block;
             }
-}  
+    .header{
+        position:relative;
+
+    }
+    .header a{ /*para todos los "a" en header hacer : */ 
+        color:rgb(0, 253, 21);
+    }
+}   
 
 
 /* para barra lateral social*/
