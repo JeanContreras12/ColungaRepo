@@ -161,6 +161,7 @@ tr:hover td{
     }
     .header a{ /*para todos los "a" en header hacer : */ 
         color:rgb(0, 253, 21);
+        background-color: rgb(0, 0, 0);
     }
 }   
 
