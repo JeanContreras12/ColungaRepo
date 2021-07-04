@@ -104,4 +104,8 @@ body{
         body{
             background-position: 0% 0%;
         }
+        .col-4{
+            padding-top: 10px;
+        }
+
 }

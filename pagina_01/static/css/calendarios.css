@@ -53,3 +53,21 @@ span.calendario{
     font-size: 50px;
     margin-left: 650px;
 }
+
+@media only screen and (max-width: 1400px){
+    body{
+        background-image: url(../img/img8.jpg);
+        background-position: 0% 0%; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+        background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
+        background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
+        background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
+        margin: 0;
+
+    }
+    .calend{
+        max-width: 500px;
+    }
+    .calendario{
+        text-align: center;
+    }
+}
