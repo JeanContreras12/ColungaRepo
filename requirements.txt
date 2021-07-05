@@ -17,5 +17,6 @@ sqlparse==0.4.1
 toml==0.10.2
 Werkzeug==2.0.1
 wrapt==1.12.1
+django-crum==0.7.5
 django-admin-interface
 django-crispy-forms
