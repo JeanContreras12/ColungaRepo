@@ -1,0 +1,11 @@
+{%load static%}
+{%block title %}Editar{%endblock%}
+<h1>Editar</h1>
+<br/><br/>
+<div class='form-group'>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class='btn btn-secondary'>Guardar</button>
+
+</div>

@@ -19,6 +19,9 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.decorators import login_required
 from ColungaApp import views
 from pagina_01 import views as viewsindex
+from pagina_01.views import UserEditView
+from django.contrib.auth import views as auth_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('logeado/', login_required(viewsindex.login), name='logeado'),
@@ -35,6 +38,11 @@ urlpatterns = [
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
     path('contacto/',login_required(viewsindex.contacto), name='contacto'),
 
+
+    path('edit_profile/',UserEditView.as_view(), name='edit_profile'),
+    path('password/',auth_views.PasswordChangeView.as_view()),
+
+    path('contacto/',login_required(viewsindex.contacto), name='contacto'),
     path('login-admin/',login_required(viewsindex.loginADMIN), name='login-admin'),
     path('planificadorADMIN/',login_required(viewsindex.planificadorAdmin), name='planificador'),
 ]
