@@ -1,0 +1,220 @@
+body{
+    background-image: url(../img/Fondo.jpg);
+    background-position: 0% 150px; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+    background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
+    background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
+    background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
+    margin: 0;
+}
+.container{
+    width: 80%;
+    max-width: 2000px;
+    margin:0;
+}
+
+.imagen-col{
+    width: 100px;
+    height: 100px;
+}
+.header{
+    padding: 2rem 0;
+    position: fixed;
+
+    left: 0;
+    top:0;
+    right: 0;
+}
+.header a{ /*para todos los "a" en header hacer : */ 
+    text-decoration: none;
+    color:green;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+.navegacion{
+    float: right;
+}
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    padding: 10px;
+
+}
+    .navegacion ul li{
+        display:inline-flex;
+        margin:0.1rem;
+    }
+        .navegacion ul li a{
+            display: block;
+        }
+.main{
+    padding-top: 12rem;
+}
+.perfil-user{
+
+    left: 0;
+    right: 0;
+}
+.menu-icon{ /* menu invisible hasta que se active*/
+    display: none;
+}
+
+
+#tabla{
+    width: 600px;
+    margin: 100px auto;
+    margin-left: 100px;
+    
+}
+#tabla2{
+    width: 600px;
+    margin: -570px auto;
+    margin-right: 200px;
+    margin-left: 1000px;
+    
+}
+
+table{
+    background-color: aliceblue;
+    text-align: left;
+    border-collapse:separate;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+#hscroll {
+    overflow-x: auto; /* Horizontal */
+  }
+th, td{
+    padding:10px;
+}
+th{
+    border: solid 4px rgb(0, 255, 34);
+    border-radius: 10px;
+    color:black;
+    font-size: 28px;
+
+}
+
+td{
+    border: solid 0px greenyellow;
+    font-size: 25px;
+    
+}
+
+thead{
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 3px #000;
+    color: white;
+    
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.noticia1{
+    height: 200px;
+}
+
+@media only screen and (max-width: 1400px){ /* Cuando la pantalla tenga un maximo de ancho de 767 hacer:*/
+    body{
+        background-image: url(../img/Fondo.jpg);
+        background-position: 0% 0%; /*posicion de la imagen en x (0 si no la quieres mover) y*/
+        background-size: 100% 100%; /*ajusta la imagen a tamaño completo de la pagina*/
+        background-repeat: no-repeat; /*para que la imagen no se repita continuamente rellando los espacios vacios*/
+        background-attachment: fixed; /*para que la imagen quede fija, incluso si hago scroll hacia abajo se mantenga siempre visible*/
+        margin: 0;
+
+    }
+
+    .navegacion{
+        width: 100%;
+        margin-top: 1rem;
+    }    
+        .navegacion ul{
+            display: none;
+        }
+        .navegacion ul.show{
+            display: block;
+        }
+        .navegacion ul li{
+            display:block;
+            float: right;
+            margin:0.1rem;
+        }
+            .navegacion ul li a{
+                display: block;
+            }
+    .header{
+        position:relative;
+
+    }
+    .header a{ /*para todos los "a" en header hacer : */ 
+        color:rgb(0, 253, 21);
+        background-color: rgb(0, 0, 0);
+    }
+}   
+
+
+/* para barra lateral social*/
+.social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition:all .5s;
+
+}
+
+.icon-facebook2{
+    background: #2E406E;
+}
+
+.icon-instagram{
+    background: #964692;
+}
+
+.icon-twitter{
+    background: #5f7dc9;
+}
+
+.icon-linkedin{
+    background: #252c3d;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/* fin barra*/

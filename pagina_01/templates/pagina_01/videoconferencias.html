@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Colunga</title>
+    <link href="{% static 'css/videoconferencias.css'%}" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/logo1.png'%}" alt="my image">
+        <nav>
+            <ul>
+                <li>
+
+                    <a href="../logeado/">
+                        <button type="button" class="btn btn-success btn-lg">
+                            <i class="fas fa-angle-right"></i> Volver
+                        </button>
+                    </a>
+                    
+                </li> 
+            </ul>
+        </nav>
+    </header>
+    <script src="/static/js/bootstrap.js"></script>
+    <div class="titulo">
+        <div>Sala de Reuniones</div>
+    </div>
+
+    <div id="lista1">
+        <ul>
+            <li><a href="https://us05web.zoom.us/j/81975465581?pwd=V3ZUV0wrRkM4YzNGM2NSRGhqVnEvZz09" alt="zoom"><i class="fas fa-lock"></i>&nbsp "Escuchar hasta comprender"<br>  Jueves 03/06: 13:00 hrs - 14:30 hrs</a></li>
+            <li><a href="https://zoom.us/join" alt="zoom"><i class="fas fa-lock"></i>&nbsp “Charla: Hablemos sobre Fake News”<br> Lunes 14/06: 10:00 - 12:00 hrs</a></li>
+            <li><a href="https://zoom.us/join" alt="zoom"><i class="fas fa-lock"></i>&nbsp “Pandemia y sociedad civil”<br> Viernes 18/06: 16:00 - 17:00 hrs</a></li>
+            <li><a href="{% static 'img/zoom.png'%}"><i class="fas fa-lock"></i>&nbsp “Charla sobre constitución y proceso constituyente”<br> Martes 29/06: 15:00 - 16:30 hrs</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

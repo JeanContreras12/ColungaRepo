@@ -1,0 +1,54 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Colunga</title>
+    <link href="{% static 'css/registro.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="https://www.fundacioncolunga.org/">
+            <img src="{% static 'img/logo1.png'%}" alt="my image">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../login-admin/">
+                    <button type="button" class="btn btn-success btn-lg">
+                        <i class="far fa-arrow-alt-circle-left"></i> Volver
+                    </button>
+                </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <script src="/static/js/bootstrap.js"></script>
+    <div class="contenedor">
+        <img class="logo-log" src="{% static 'img/avatar-colunga.png'%}" alt="my image" width="200" height="120">
+    </div>
+    <section class="form-login">
+
+        <h2 class="titulo">Registro de usuario</h2>
+        {% for message in messages %}
+            <strong><h3 class="messages">{{ message }}</h3></strong>
+        {% endfor %}
+        <form action="" method="POST" class="formulario">
+            {% csrf_token%}
+            <table class="tabla">
+                {{ form.as_table }}
+
+            </table>
+        
+        <input class="buttons" input type="submit" value="Registrar" > 
+        {{formulario.errors}}
+        </form>
+
+    </section>
+</body>
+</html>
