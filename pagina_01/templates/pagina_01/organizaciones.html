@@ -1,4 +1,7 @@
 {%load static%}
+
+{% load auth_extras %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,7 @@
     <link href="{% static 'css/organizaciones.css'%}" rel="stylesheet" />
 </head>
 <body>
+
     <div class= "social-bar">
         <a href="https://www.facebook.com/fundacioncolunga/" class="icon icon-facebook2" target="_blank"></a>
         <a href="https://www.instagram.com/fundacioncolunga/?hl=es" class="icon icon-instagram" target="_blank"></a>
@@ -20,9 +24,18 @@
     </div>
     <header>
         <img src="{% static 'img/logo1.png'%}" alt="my image">
+ 
+        <nav>
+            
+            <ul>
+                
+                <li>
+                    
+
         <nav>
             <ul>
                 <li>
+
                     <a href="../logeado/">
                         <button type="button" class="btn btn-success btn-lg">
                             <i class="fas fa-angle-right"></i> Volver
@@ -31,6 +44,87 @@
                 </li> 
             </ul>
         </nav>
+
+        <nav class="titulo-up">
+            <td><strong><center><span class="titlo">Organizaciones Afiliadas</center></span></strong></td>
+        </nav>
+
+        
+
+    
     </header>
+    <main class="main">
+        <div class="container">
+            <div id="fb-root"></div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-4">
+                        <a href="https://fundacion99.org">
+                            <img src="{% static 'img/fundacion99.png'%}" alt="my-img">
+                        </a>
+                  </div>
+                  <div class="col-4">
+                        <a href="https://educacion2020.cl/">
+                            <img src="{% static 'img/33.png'%}" alt="my-img">
+                        </a>
+                  </div>
+                  <div class="col-4">
+                        <a href="https://infanciaprimero.org/">
+                            <img src="{% static 'img/34.png'%}" alt="my-img">
+                        </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://isf-chile.org/">
+                        <img src="{% static 'img/35.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://hphchile.cl/">
+                        <img src="{% static 'img/36.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://www.gi-escr.org/">
+                        <img src="{% static 'img/37.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="http://www.cideni.org/">
+                        <img src="{% static 'img/2.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://www.gi-escr.org/">
+                        <img src="{% static 'img/4.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://fipi.cl/">
+                        <img src="{% static 'img/5.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://www.iguales.cl/">
+                        <img src="{% static 'img/6.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://www.interpreta.org/">
+                        <img src="{% static 'img/7.png'%}" alt="my-img">
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://mistalentos.cl/">
+                        <img src="{% static 'img/8.png'%}" alt="my-img">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+    </main>
+    </header>
+
 </body>
 </html>
