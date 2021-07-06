@@ -1,5 +1,55 @@
 {%load static%}
-{%block title %}Editar{%endblock%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Perfil</title>
+    <link href="{% static 'css/edit_profile.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="https://www.fundacioncolunga.org/">
+            <img src="{% static 'img/logo1.png'%}" alt="my image">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../logeado/">
+                    <button type="button" class="btn btn-success btn-lg">
+                        <i class="far fa-arrow-alt-circle-left"></i> Volver
+                    </button>
+                </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <script src="/static/js/bootstrap.js"></script>
+    <div class="contenedor">
+        <img class="logo-log" src="{% static 'img/avatar-colunga.png'%}" alt="my image" width="200" height="120">
+    </div>
+    <section class="form-login">
+
+        <h2 class="titulo">Perfil de Usuario</h2>
+        <form action="" method="POST" class="formulario">
+            {% csrf_token%}
+            <table class="tabla">
+                {{ form.as_p }}
+
+            </table>
+            <button class='btn btn-secondary'>Guardar</button>
+        </form>
+
+    </section>
+</body>
+</html>
+    
+
+<!--
 <h1>Editar</h1>
 <br/><br/>
 <div class='form-group'>
@@ -9,3 +59,4 @@
         <button class='btn btn-secondary'>Guardar</button>
 
 </div>
+-->
