@@ -68,7 +68,7 @@ def registro(request):
 class UserEditView(generic.UpdateView):
     form_class = EditProfileForm
     template_name = 'pagina_01/edit_profile.html'
-    success_url = reverse_lazy('perfil')
+    success_url = reverse_lazy('edit_profile')
     def get_object(self):
-        
         return self.request.user
+    

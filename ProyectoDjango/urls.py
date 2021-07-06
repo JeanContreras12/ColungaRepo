@@ -36,7 +36,7 @@ urlpatterns = [
     path('organizaciones/',login_required(viewsindex.organizaciones), name='organizaciones'),
     path('organizacionesADMIN/',login_required(viewsindex.organizacionesADMIN), name='organizaciones'),
     path('perfil/',login_required(viewsindex.perfil), name='perfil'),
-    path('perfilADMIN/',login_required(viewsindex.perfilADMIN), name='perfil'),
+    path('perfilADMIN/',login_required(viewsindex.perfilADMIN), name='perfilADMIN'),
     path('edit_profile/',UserEditView.as_view(), name='edit_profile'),
     path('password/',auth_views.PasswordChangeView.as_view()),
 
