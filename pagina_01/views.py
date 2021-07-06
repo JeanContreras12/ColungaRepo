@@ -33,7 +33,9 @@ def comunicadosINDEX(request):
 
 def comunicados(request):
     return render(request, 'pagina_01/comunicados.html')
+
 @solo_admin
+
 def organizacionesADMIN(request):
     return render(request,'pagina_01/organizacionesADMIN.html')
 def organizaciones(request):
