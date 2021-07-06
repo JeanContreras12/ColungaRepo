@@ -33,14 +33,14 @@ def comunicadosINDEX(request):
 
 def comunicados(request):
     return render(request, 'pagina_01/comunicados.html')
-
 @solo_admin
-
 def organizacionesADMIN(request):
     return render(request,'pagina_01/organizacionesADMIN.html')
 def organizaciones(request):
     return render(request,'pagina_01/organizaciones.html')
-
+@solo_admin
+def perfilADMIN(request):
+    return render(request, 'pagina_01/perfilADMIN.html')
 def perfil(request):
     return render(request, 'pagina_01/perfil.html')
 def contacto(request):
@@ -68,7 +68,7 @@ def registro(request):
 class UserEditView(generic.UpdateView):
     form_class = EditProfileForm
     template_name = 'pagina_01/edit_profile.html'
-    success_url = reverse_lazy('edit_profile')
+    success_url = reverse_lazy('perfil')
     def get_object(self):
         
         return self.request.user
