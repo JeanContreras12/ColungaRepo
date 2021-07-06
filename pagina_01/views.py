@@ -1,11 +1,15 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth.models import User
 from .forms import CustomUserForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import Group
 from django.contrib import messages
 from .decorators import solo_admin
+from django.views import generic
+from django.urls import reverse_lazy
+from pagina_01.forms import EditProfileForm
+
 # Create your views here.
 @solo_admin
 def loginADMIN(request):
@@ -30,6 +34,8 @@ def comunicadosINDEX(request):
 def comunicados(request):
     return render(request, 'pagina_01/comunicados.html')
 
+def organizacionesADMIN(request):
+    return render(request,'pagina_01/organizacionesADMIN.html')
 def organizaciones(request):
     return render(request,'pagina_01/organizaciones.html')
 
@@ -56,3 +62,12 @@ def registro(request):
             messages.success(request,'cuenta creada con exito')
 
     return render(request, 'pagina_01/registro.html',data)
+
+
+class UserEditView(generic.UpdateView):
+    form_class = EditProfileForm
+    template_name = 'pagina_01/edit_profile.html'
+    success_url = reverse_lazy('index.html')
+
+    def get_object(self):
+        return self.request.user
